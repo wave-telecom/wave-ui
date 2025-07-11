@@ -142,4 +142,4 @@ The `theme.palette` property contains the following suffixes:
 [issues-shield]: https://img.shields.io/github/issues/wave-telecom/wave-ui.svg?style=for-the-badge
 [issues-url]: https://github.com/wave-telecom/wave-ui/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/company/wave-by-
+[linkedin-url]: https://www.linkedin.com/company/wave-by-bemobi

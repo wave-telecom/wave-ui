@@ -34,6 +34,8 @@ const eslintConfig = [
       'eslint.config.mjs',
       'coverage/**',
       'storybook-static/**',
+      'dist/**',
+      'build/**',
     ],
   },
   {
