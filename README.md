@@ -91,6 +91,8 @@ Wave UI uses the Emotion library for styling.
 When working with Next.js, configure a cache provider to support SSR.
 See the [Emotion SSR documentation](https://emotion.sh/docs/ssr) for setup instructions.
 
+### Running tests
+
 ---
 
 ## Theme Palette Guide

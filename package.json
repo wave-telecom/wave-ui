@@ -40,12 +40,12 @@
     "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "husky": "^9.1.7",
     "@babel/preset-react": "^7.27.1",
     "@eslint/eslintrc": "^3",
     "@eslint/js": "^9.29.0",
     "@storybook/addon-a11y": "^9.0.16",
     "@storybook/addon-docs": "^9.0.14",
+    "@storybook/addon-vitest": "^9.0.16",
     "@storybook/react-vite": "^9.0.12",
     "@testing-library/react": "^16.3.0",
     "@types/node": "^20",
@@ -63,6 +63,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-storybook": "^9.0.12",
     "globals": "^16.2.0",
+    "husky": "^9.1.7",
     "jsdom": "^26.1.0",
     "playwright": "^1.53.1",
     "storybook": "^9.0.12",
