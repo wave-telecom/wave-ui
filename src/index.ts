@@ -1,3 +1,5 @@
+import { CssBaseline } from 'theme-token-manager'
+
 import Button, { ButtonProps } from './button'
 import Card, { CardProps } from './card'
 import Chip from './chip'
@@ -15,7 +17,9 @@ export {
   Typography,
   ThemeProvider,
   ModeProvider,
+  CssBaseline,
 }
+
 export type {
   ButtonProps,
   CardProps,
