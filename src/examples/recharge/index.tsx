@@ -8,7 +8,7 @@ import Chip from '../../chip'
 import { useTheme } from '../../hooks/theme'
 import IconButton from '../../icon-button'
 import { TypographyVariant } from '../../typography'
-import renderTextWIthLineBreak from '../../utils/renderTextWithLineBreak'
+import { renderTextWithLineBreak } from '../../utils/renderTextWithLineBreak'
 
 import { cardStyle, fontStyle, priceStyle } from './styles'
 
@@ -140,7 +140,7 @@ const Recharge = ({
               styles.description?.color
             )}
           >
-            {renderTextWIthLineBreak(description)}
+            {renderTextWithLineBreak(description)}
           </div>
         )}
       </div>

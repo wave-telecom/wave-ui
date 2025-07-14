@@ -12,7 +12,7 @@ import {
   styles,
 } from './styles'
 
-type CardProps = React.PropsWithChildren<{
+export type CardProps = React.PropsWithChildren<{
   isSelected: boolean
   selectedVariant?: 'solid' | 'gradient'
   radius: BorderRadiusValues

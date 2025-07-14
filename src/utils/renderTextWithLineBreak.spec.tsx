@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 
-import renderTextWithLineBreak from './renderTextWithLineBreak'
+import { renderTextWithLineBreak } from './renderTextWithLineBreak'
 
 describe('renderTextWithLineBreak', () => {
   it('should not add separators to a text without line break', () => {

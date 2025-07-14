@@ -33,9 +33,3 @@ jobs:
 
       - name: Run build
         run: npm run build
-
-      # - name: Upload coverage
-      #   uses: codecov/codecov-action@v5
-      #   with:
-      #     token: ${{ secrets.CODECOV_TOKEN }}
-      #     slug: adrianhideki/theme-token-manager

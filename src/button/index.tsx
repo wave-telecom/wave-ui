@@ -20,7 +20,7 @@ export type SizeVariants = 'small' | 'normal' | 'large'
 export type ButtonColor = 'primary' | 'secondary' | 'none'
 export type ButtonVariant = 'filled' | 'text' | 'outlined'
 
-type ButtonProps = {
+export type ButtonProps = {
   startIcon?: ReactNode
   endIcon?: ReactNode
   size?: SizeVariants
