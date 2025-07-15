@@ -1,6 +1,6 @@
-import { cx, css } from '@emotion/css'
+import { css, cx } from '@emotion/css'
 
-import Typography, { TypographyProps } from '../../../typography'
+import Typography, { TypographyProps } from '@/typography'
 
 type OfferTextProps = {
   weight?: number

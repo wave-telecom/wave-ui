@@ -23,6 +23,9 @@ export default defineConfig({
     },
     environment: 'jsdom',
     watch: false,
+    alias: {
+      '@/': new URL('./src/', import.meta.url).pathname,
+    },
     coverage: {
       provider: 'istanbul',
       include: ['src/**/*.{tsx,ts}'],

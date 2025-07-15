@@ -1,10 +1,10 @@
 import { cx } from '@emotion/css'
 import { PropsWithChildren, useCallback } from 'react'
 
-import { useTheme } from '../hooks/theme'
-
 import styles from './styles'
 import { ChipProps } from './types'
+
+import { useTheme } from '@/hooks/theme'
 
 const Chip = ({
   children,

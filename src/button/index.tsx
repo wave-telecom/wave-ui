@@ -1,10 +1,10 @@
-import { cx, css } from '@emotion/css'
+import { css, cx } from '@emotion/css'
 import React, { ReactNode } from 'react'
 import { BorderRadiusValues } from 'theme-token-manager'
 import { FontValues } from 'theme-token-manager/theme/types'
 
-import { useTheme } from '../hooks/theme'
-import { getTransparencyColor } from '../utils/getTransparencyColor'
+import { useTheme } from '@/hooks/theme'
+import { getTransparencyColor } from '@/utils/getTransparencyColor'
 
 export type ButtonPadding =
   | 'none'

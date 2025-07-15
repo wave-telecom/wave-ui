@@ -1,6 +1,6 @@
 import { PropsWithChildren, useState } from 'react'
 
-import { ModeContext } from '../../contexts/mode'
+import { ModeContext } from '@/contexts/mode'
 
 type ModeProviderProps = {
   mode?: 'light' | 'dark'

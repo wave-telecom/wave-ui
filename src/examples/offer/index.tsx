@@ -6,15 +6,15 @@ import {
 } from 'theme-token-manager'
 import { ThemePaletteTextValues } from 'theme-token-manager/theme/types'
 
-import Button, { ButtonColor } from '../../button'
-import Card from '../../card'
-import { useTheme } from '../../hooks/theme'
-import IconButton from '../../icon-button'
-import { TypographyVariant } from '../../typography'
-
 import OfferImage from './components/offer-image'
 import OfferRow from './components/offer-row'
 import OfferText from './components/offer-text'
+
+import Button, { ButtonColor } from '@/button'
+import Card from '@/card'
+import { useTheme } from '@/hooks/theme'
+import IconButton from '@/icon-button'
+import { TypographyVariant } from '@/typography'
 
 const orderValues = [
   'image',

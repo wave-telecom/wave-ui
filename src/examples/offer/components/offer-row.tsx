@@ -1,7 +1,7 @@
 import { css, cx } from '@emotion/css'
 import { SpacingValues } from 'theme-token-manager'
 
-import { Theme } from '../../../types'
+import { Theme } from '@/types'
 
 type OfferRowProps = {
   theme: Theme
