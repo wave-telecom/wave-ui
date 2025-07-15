@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css'
-import { createElement, CSSProperties, memo, type ReactNode } from 'react'
+import { createElement, CSSProperties, JSX, memo, type ReactNode } from 'react'
 
 import { useTheme } from '../hooks/theme'
 import { Theme } from '../types'
@@ -46,6 +46,7 @@ export type TypographyProps = {
   className?: string
   style?: CSSProperties
   children: ReactNode
+  as?: keyof JSX.IntrinsicElements
 }
 
 const BaseTypography = ({
@@ -53,9 +54,10 @@ const BaseTypography = ({
   children,
   className,
   style,
+  as,
 }: TypographyProps) => {
   const element = createElement(
-    getElement(variant),
+    as ?? getElement(variant),
     { className, style },
     children
   )
