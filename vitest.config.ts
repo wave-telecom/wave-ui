@@ -31,9 +31,19 @@ export default defineConfig({
     projects: [
       {
         extends: true,
+        test: {
+          include: ['**/*.{spec,test}.{tsx,ts}'],
+          browser: {
+            enabled: true,
+            headless: true,
+            provider: 'playwright',
+            instances: [{ browser: 'chromium' }],
+          },
+        },
+      },
+      {
+        extends: true,
         plugins: [
-          // The plugin will run tests for the stories defined in your Storybook config
-          // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
           storybookTest({
             configDir: path.join(dirname, '.storybook'),
           }),
@@ -46,7 +56,7 @@ export default defineConfig({
             provider: 'playwright',
             instances: [
               {
-                name: 'test-chromium',
+                name: 'storybook-chromium',
                 browser: 'chromium',
               },
             ],
