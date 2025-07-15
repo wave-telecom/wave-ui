@@ -69,14 +69,15 @@ const styles = (theme: Theme, variant?: TypographyVariant) => css`
   font-weight: ${theme.font.weight[variant ?? 'body']};
   line-height: ${theme.font.height[variant ?? 'body']}px;
   letter-spacing: ${theme.font.spacing[variant ?? 'body']}px;
+  margin: unset;
 `
 
-const Typography = ({ ...props }: TypographyProps) => {
+const Typography = ({ className, ...props }: TypographyProps) => {
   const { theme } = useTheme()
 
   return (
     <BaseTypography
-      className={cx(styles(theme, props.variant), props.className)}
+      className={cx(styles(theme, props.variant), className)}
       {...props}
     />
   )
