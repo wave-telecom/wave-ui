@@ -3,14 +3,14 @@ import { ReactNode } from 'react'
 import { BorderRadiusValues, SpacingValues } from 'theme-token-manager'
 import { ThemePaletteTextValues } from 'theme-token-manager/theme/types'
 
-import { cardStyle, fontStyle, priceStyle } from './styles'
+import Card from '../../card'
+import Chip from '../../chip'
+import { useTheme } from '../../hooks/theme'
+import IconButton from '../../icon-button'
+import { TypographyVariant } from '../../typography'
+import { renderTextWithLineBreak } from '../../utils/renderTextWithLineBreak'
 
-import Card from '@/card'
-import Chip from '@/chip'
-import { useTheme } from '@/hooks/theme'
-import IconButton from '@/icon-button'
-import { TypographyVariant } from '@/typography'
-import { renderTextWithLineBreak } from '@/utils/renderTextWithLineBreak'
+import { cardStyle, fontStyle, priceStyle } from './styles'
 
 type RechargeStyle = {
   textVariant: TypographyVariant

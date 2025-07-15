@@ -2,7 +2,7 @@ import { css, cx } from '@emotion/css'
 import { ReactNode } from 'react'
 import { BorderRadiusValues } from 'theme-token-manager'
 
-import { useTheme } from '@/hooks/theme'
+import { useTheme } from '../hooks/theme'
 
 export type IconButtonColor = 'primary' | 'secondary' | 'none'
 export type IconButtonVariant = 'filled' | 'text' | 'outlined'

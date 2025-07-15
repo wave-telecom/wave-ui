@@ -1,12 +1,12 @@
 import { ReactRenderer } from '@storybook/react-vite'
 import { memo, ReactNode, useEffect, useState } from 'react'
 import { PartialStoryFn } from 'storybook/internal/types'
-import { ThemeProvider, useTheme } from 'theme-token-manager'
+import { useTheme, ThemeProvider } from 'theme-token-manager'
+
+import { useMode } from '../../src/hooks/mode'
+import ModeProvider from '../../src/providers/mode'
 
 import { themes, ThemeValues } from './themes'
-
-import { useMode } from '@/hooks/mode'
-import ModeProvider from '@/providers/mode'
 
 function BodyBackground({ mode }: { mode: 'light' | 'dark' }) {
   const { theme } = useTheme()

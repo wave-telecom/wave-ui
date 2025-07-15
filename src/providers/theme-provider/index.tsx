@@ -1,8 +1,8 @@
 import { PropsWithChildren } from 'react'
 import { ThemeProvider as TokenProvider, type Theme } from 'theme-token-manager'
 
-import ModeProvider from '@/providers/mode'
-import { waveTheme } from '@/theme'
+import { waveTheme } from '../../theme'
+import ModeProvider from '../mode'
 
 type ThemeProviderProps = {
   initialMode?: 'light' | 'dark'

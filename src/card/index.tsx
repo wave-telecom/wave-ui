@@ -2,15 +2,15 @@ import { cx } from '@emotion/css'
 import React from 'react'
 import { BorderRadiusValues, SpacingValues } from 'theme-token-manager'
 
+import { useTheme } from '../hooks/theme'
+import { Theme } from '../types'
+
 import {
   cardContentStyles,
   selectedGradientStyles,
   selectedSolidStyles,
   styles,
 } from './styles'
-
-import { useTheme } from '@/hooks/theme'
-import { Theme } from '@/types'
 
 export type CardProps = React.PropsWithChildren<{
   isSelected: boolean
