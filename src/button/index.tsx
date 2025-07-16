@@ -1,4 +1,4 @@
-import { cx, css } from '@emotion/css'
+import { css, cx } from '@emotion/css'
 import React, { ReactNode } from 'react'
 import { BorderRadiusValues } from 'theme-token-manager'
 import { FontValues } from 'theme-token-manager/theme/types'
@@ -18,7 +18,7 @@ export type ButtonPadding =
 
 export type SizeVariants = 'small' | 'normal' | 'large'
 export type ButtonColor = 'primary' | 'secondary' | 'none'
-export type ButtonVariant = 'filled' | 'text' | 'outlined'
+export type ButtonVariant = 'filled' | 'text' | 'outlined' | 'subtle'
 
 export type ButtonProps = {
   startIcon?: ReactNode
@@ -66,6 +66,10 @@ const Button = ({
   const bgColor = () => {
     if (buttonColor === 'none') {
       return 'inherit'
+    }
+
+    if (variant == 'subtle' && buttonColor !== 'disabled') {
+      return theme.palette.surface[`${buttonColor}-defaultSubtle`]
     }
 
     return variant == 'filled'

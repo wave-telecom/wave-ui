@@ -5,7 +5,7 @@ import { BorderRadiusValues } from 'theme-token-manager'
 import { useTheme } from '../hooks/theme'
 
 export type IconButtonColor = 'primary' | 'secondary' | 'none'
-export type IconButtonVariant = 'filled' | 'text' | 'outlined'
+export type IconButtonVariant = 'filled' | 'text' | 'outlined' | 'subtle'
 export type IconButtonPadding =
   | 'none'
   | '3xs'
@@ -51,8 +51,19 @@ const IconButton = ({
     radius ? `border-radius: ${theme.size.border.radius[radius]}px;` : ''
 
   const getBgColor = () => {
-    if (variant === 'filled' && buttonColor !== 'none') {
+    const isSubtleBackground =
+      variant == 'subtle' &&
+      buttonColor !== 'disabled' &&
+      buttonColor !== 'none'
+
+    const isFilledBackground = variant === 'filled' && buttonColor !== 'none'
+
+    if (isFilledBackground) {
       return theme.palette.icon[`${buttonColor}-default`]
+    }
+
+    if (isSubtleBackground) {
+      return theme.palette.surface[`${buttonColor}-defaultSubtle`]
     }
 
     return 'inherit'
