@@ -6,15 +6,15 @@ const defaultFamily = {
 }
 
 const defaultHeight = {
-  '4xl': 72,
-  '3xl': 56,
-  '2xl': 44,
-  xl: 36,
-  lg: 28,
-  md: 22,
-  base: 18,
-  sm: 16,
-  xs: 14,
+  '4xl': 74,
+  '3xl': 58,
+  '2xl': 46,
+  xl: 38,
+  lg: 30,
+  md: 24,
+  base: 20,
+  sm: 18,
+  xs: 16,
 }
 
 const defaultSpacing = {

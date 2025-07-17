@@ -303,7 +303,17 @@ export const algarTheme: Theme = {
       height: defaultHeight,
       spacing: defaultSpacing,
       paragraphSpacing: defaultParagraphSpacing,
-      size: defaultHeight,
+      size: {
+        '4xl': 72,
+        '3xl': 56,
+        '2xl': 44,
+        xl: 36,
+        lg: 28,
+        md: 22,
+        base: 18,
+        sm: 16,
+        xs: 14,
+      },
       weight: defaultWeight,
     },
     size: {
