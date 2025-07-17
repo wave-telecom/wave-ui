@@ -20,9 +20,9 @@ export const fontStyle = (
   color: ${theme.palette.text[color ?? 'default-body']};
 `
 
-export const priceStyle = (theme: Theme) => css`
+export const priceStyle = (theme: Theme, gap: SpacingValues) => css`
   display: flex;
-  gap: ${theme.size.spacing['3xs']}px;
+  gap: ${theme.size.spacing[gap]}px;
   align-items: center;
 `
 

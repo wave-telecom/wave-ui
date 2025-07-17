@@ -78,8 +78,8 @@ type Story = StoryObj<typeof meta>
 
 export const DefaultOffer: Story = {
   args: {
-    padding: '2xs',
-    gap: '3xs',
+    padding: 'xs',
+    gap: '2xs',
     title: 'Netflix',
     price: 'R$10,00 com a Wave',
     oldPrice: 'R$20,90',
@@ -115,8 +115,8 @@ export const NioOffer: Story = {
   decorators: [ThemeDecorator('nio')],
   args: {
     id: 'offer-1',
-    padding: '2xs',
-    gap: '3xs',
+    padding: 'xs',
+    gap: 'sm',
     title: 'Netflix',
     price: 'R$15,00 com a Nio',
     oldPrice: 'R$20,90',
@@ -126,7 +126,7 @@ export const NioOffer: Story = {
     actionIconSelected: iconMapping.minus,
     actionVariant: 'text',
     actionRadius: 'pill',
-    radius: 'sm',
+    radius: 'lg',
     order: [['image'], ['title'], ['oldPrice'], ['price'], ['description']],
     config: {
       image: {

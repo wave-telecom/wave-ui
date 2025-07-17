@@ -106,7 +106,7 @@ const Recharge = ({
         <div
           className={cx(
             fontStyle(theme, styles.price.textVariant, styles.price.color),
-            priceStyle(theme)
+            priceStyle(theme, gap)
           )}
         >
           {price}

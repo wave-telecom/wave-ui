@@ -6,15 +6,15 @@ const defaultFamily = {
 }
 
 const defaultHeight = {
-  '4xl': 72,
-  '3xl': 56,
-  '2xl': 44,
-  xl: 36,
-  lg: 28,
-  md: 22,
-  base: 18,
-  sm: 16,
-  xs: 14,
+  '4xl': 74,
+  '3xl': 58,
+  '2xl': 46,
+  xl: 38,
+  lg: 30,
+  md: 24,
+  base: 20,
+  sm: 18,
+  xs: 16,
 }
 
 const defaultSpacing = {
@@ -25,10 +25,10 @@ const defaultSpacing = {
 }
 
 const defaultWeight = {
-  regular: 500,
-  medium: 600,
-  semiBold: 700,
-  bold: 800,
+  regular: 400,
+  medium: 500,
+  semiBold: 600,
+  bold: 700,
 }
 
 const defaultParagraphSpacing = {
@@ -37,28 +37,28 @@ const defaultParagraphSpacing = {
 
 const defaultDimensions = {
   '0': 0,
-  '25': 2,
-  '50': 4,
-  '100': 8,
-  '150': 12,
-  '200': 16,
-  '300': 20,
-  '400': 24,
-  '500': 32,
-  '600': 40,
-  '700': 48,
-  '800': 56,
-  '900': 64,
-  '1000': 80,
-  '1100': 96,
-  '1200': 112,
-  '1300': 128,
-  '1400': 144,
-  '1500': 160,
-  '1600': 192,
+  '25': 1,
+  '50': 2,
+  '100': 4,
+  '150': 6,
+  '200': 8,
+  '300': 12,
+  '400': 16,
+  '500': 20,
+  '600': 24,
+  '700': 28,
+  '800': 32,
+  '900': 36,
+  '1000': 40,
+  '1100': 48,
+  '1200': 56,
+  '1300': 64,
+  '1400': 72,
+  '1500': 96,
+  '1600': 128,
   '1700': 256,
-  '1800': 384,
-  '1900': 512,
+  '1800': 512,
+  '1900': 1024,
 }
 
 export const algarTheme: Theme = {
@@ -422,9 +422,9 @@ export const algarTheme: Theme = {
   size: {
     border: {
       width: {
-        xs: 25,
-        sm: 50,
-        md: 100,
+        xs: 50,
+        sm: 100,
+        md: 150,
       },
       radius: {
         none: 0,
