@@ -18,6 +18,9 @@
     ".": {
       "default": "./src/index.ts"
     },
+    "./css/tailwind-css-mapper.css": {
+      "default": "./src/css/tailwind-css-mapper.css"
+    },
     "./*": {
       "default": [
         "./src/*/index.tsx",
