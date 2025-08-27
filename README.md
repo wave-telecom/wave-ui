@@ -44,6 +44,18 @@ yarn add @wave-telecom/ui
 pnpm add @wave-telecom/ui
 ```
 
+### Next extra configuration (installation from git as package)
+
+If you installed this package from github repository, you'll need to add the package into the `transpilePackages` list parameters into `next.config.js` file:
+
+```ts
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
+  transpilePackages: ['@wave-telecom/ui'], // <-- this line
+}
+```
+
 ### Configuring the Theme Provider
 
 To use Wave UI's theme management, wrap your application with the `ThemeProvider`.
@@ -83,6 +95,47 @@ const MyComponent = () => {
     </div>
   )
 }
+```
+
+### Configuring Css Variables injection
+
+If you need to work with the tokens into css files, you can use the `CssBaseline` injector to populate the tokens as css variables:
+
+```tsx
+import { ThemeProvider, CssBaseLine } from '@wave-telecom/ui'
+import { theme } from './theme'
+
+function AppRoot() {
+  return (
+    <ThemeProvider initialMode="dark" initialTheme={theme}>
+      <CssBaseLine mode="light">
+        <App />
+      <CssBaseLine>
+    </ThemeProvider>
+  )
+}
+```
+
+Available variables:
+
+| Token Example Format                               | Description / Variations                                                                                                                                                                                                                               |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `--PREFIX-color-PALLETE_PATH`                      | Color variable. PALLETE_PATH: e.g. `surface-primary-default`                                                                                                                                                                                           |
+| `--PREFIX-font-FONT_PROPERTY-FONT_VARIATION`       | Font variable. FONT_PROPERTY: `family`, `spacing`, `paragraphSpacing`, `size`, `weight`, `height`. FONT_VARIATION: `label`, `labelLong`, `h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `hyperlink`, `hyperlinkHover`, `caption`, `body`, `bodyShort`, `bodyLong` |
+| `--PREFIX-size-spacing-SPACING_VARIATIONS`         | Spacing variable. SPACING_VARIATIONS: `4xs`, `3xs`, `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`, `4xl`                                                                                                                                           |
+| `--PREFIX-size-DIMENSION_VALUES`                   | Dimension variable. DIMENSION_VALUES: `0`, `25`, `50`, `100`, `150`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, `1000`, `1100`, `1200`, `1300`, `1400`, `1500`, `1600`, `1700`, `1800`, `1900`                                            |
+| `--PREFIX-size-border-width-BORDER_WIDTH_VALUES`   | Border width variable. BORDER_WIDTH_VALUES: `xs`, `sm`, `md`                                                                                                                                                                                           |
+| `--PREFIX-size-border-radius-BORDER_RADIUS_VALUES` | Border radius variable. BORDER_RADIUS_VALUES: `none`, `3xs`, `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`, `4xl`, `pill`                                                                                                                          |
+
+- `PREFIX` is optional and can be omitted or replaced as needed.
+- Replace the uppercase placeholders with the desired value from the corresponding variation list.
+
+#### Tailwind classes
+
+We provide a css class mapper using the tailwind pattern, you can just import the file [`tailwind-css-mapper.css`](./src/css/tailwind-css-mapper.css) and style the components.
+
+```tsx
+import '@wave-telecom/ui/css/tailwind-css-mapper.css'
 ```
 
 ### Setup Wave UI with Next.js
