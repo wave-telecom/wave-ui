@@ -13,11 +13,11 @@ export {
   Button,
   Card,
   Chip,
-  IconButton,
-  Typography,
-  ThemeProvider,
-  ModeProvider,
   CssBaseline,
+  IconButton,
+  ModeProvider,
+  ThemeProvider,
+  Typography,
 }
 
 export type {
@@ -28,11 +28,11 @@ export type {
   TypographyProps,
 }
 
-export * from './icons'
+export * from './colors'
 export * from './hooks/mode'
 export * from './hooks/theme'
-export * from './types'
+export * from './icons'
 export * from './theme'
-export * from './utils'
 export * from './tokens'
-export * from './colors'
+export * from './types'
+export * from './utils'
